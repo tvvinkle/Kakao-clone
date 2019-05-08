@@ -1,103 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <title>Settings | Kakao Clone</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="statusbar">
-        <div class="statusbar__column">
-            <span class="statusbar__clock">
-                11:19
-            </span>
-        </div>
-        <div class="statusbar__column">
-            <i class="far fa-clock"></i>
-            <i class="fas fa-wifi"></i>
-            <i class="fas fa-signal"></i>
-            <i class="fas fa-battery-three-quarters"></i>
-        </div>
+      <div class="statusbar__column">
+        <span class="statusbar__clock">
+          11:19
+        </span>
+      </div>
+      <div class="statusbar__column">
+        <i class="far fa-clock"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
     </div>
     <header class="header">
-        <div class="header__header-column">
-            <div class="header__header-column">
-                <a href="more.html"> <span class="header__icon"><i class="fas fa-arrow-left"></i></span></a>
-                <h1 class="header__title">Settings </h1>
-            </div>
-            <div class="header__header-column">
-                <span class="header__icon"><i class="fas fa-search"></i></span>
-            </div>
-        </div>
+      <div class="header__header-column">
+        <a href="more.html" class="header__icon header__back-btn"><i class="fas fa-arrow-left"></i
+        ></a>
+        <h1 class="header__title">Settings</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon"><i class="fas fa-search"></i></span>
+      </div>
+    </header>
 
-        <main class="settings">
-            <section class="settings__sections">
-                <ul class="settings__list">
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="far fa-flag"></i></span>
-                        <span class="settings__title">Notice</span>
-                    </li>
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="fas fa-flask"></i></span>
-                        <span class="settings__title">Kakao Lab</span>
-                    </li>
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="fas fa-info-circle"></i></span>
-                        <span class="settings__title">Version</span>
-                    </li>
-                </ul>
-            </section>
-            <section class="settings__sections">
-                <ul class="settings__list">
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="fas fa-lock"></i></span>
-                        <span class="settings__title">Privacy</span>
-                    </li>
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="far fa-bell"></i></span>
-                        <span class="settings__title">Notifications</span>
-                    </li>
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="fas fa-user-alt"></i></span>
-                        <span class="settings__title">Friends</span>
-                    </li>
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="far fa-comment"></i></span>
-                        <span class="settings__title">Chats</span>
-                    </li>
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="fas fa-sms"></i></span>
-                        <span class="settings__title">SMS Messages</span>
-                    </li>
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="far fa-sun"></i></span>
-                        <span class="settings__title">Display</span>
-                    </li>
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="fas fa-brush"></i></span>
-                        <span class="settings__title">Themes</span>
-                    </li>
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="fas fa-ellipsis-h"></i></span>
-                        <span class="settings__title">Advanced Features</span>
-                    </li>
-                </ul>
-            </section>
-            <section class="settings__sections">
-                <ul class="settings__list">
-                    <li class="settings__setting">
-                        <span class="settings__icon"><i class="far fa-question-circle"></i></span>
-                        <span class="settings__title">Support</span>
-                    </li>
-
-                </ul>
-            </section>
-        </main>
-</body>
-
+    <main class="settings">
+      <section class="settings__sections">
+        <ul class="settings__list">
+          <li class="settings__setting">
+            <span class="settings__icon"><i class="far fa-flag"></i></span>
+            <span class="settings__title">Notice</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icon"><i class="fas fa-flask"></i></span>
+            <span class="settings__title">Kakao Lab</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icon"
+              ><i class="fas fa-info-circle"></i
+            ></span>
+            <span class="settings__title">Version</span>
+          </li>
+        </ul>
+      </section>
+      <section class="settings__sections">
+        <ul class="settings__list">
+          <li class="settings__setting">
+            <span class="settings__icon"><i class="fas fa-lock"></i></span>
+            <span class="settings__title">Privacy</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icon"><i class="far fa-bell"></i></span>
+            <span class="settings__title">Notifications</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icon"><i class="fas fa-user-alt"></i></span>
+            <span class="settings__title">Friends</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icon"><i class="far fa-comment"></i></span>
+            <span class="settings__title">Chats</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icon"><i class="fas fa-sms"></i></span>
+            <span class="settings__title">SMS Messages</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icon"><i class="far fa-sun"></i></span>
+            <span class="settings__title">Display</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icon"><i class="fas fa-brush"></i></span>
+            <span class="settings__title">Themes</span>
+          </li>
+          <li class="settings__setting">
+            <span class="settings__icon"
+              ><i class="fas fa-ellipsis-h"></i
+            ></span>
+            <span class="settings__title">Advanced Features</span>
+          </li>
+        </ul>
+      </section>
+      <section class="settings__sections">
+        <ul class="settings__list">
+          <li class="settings__setting">
+            <span class="settings__icon"
+              ><i class="far fa-question-circle"></i
+            ></span>
+            <span class="settings__title">Support</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>

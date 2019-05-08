@@ -1,0 +1,14 @@
+.statusbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+
+.statusbar i {
+  font-size: 14px;
+}
+
+.statusbar .statusbar__battery {
+  margin-left: 5px;
+}
