@@ -14,7 +14,8 @@
     <title>Chat | Kakao Clone</title>
   </head>
 
-  <body>
+  <body class="chat-body">
+    <div class="header-wrapper">
     <div class="statusbar">
       <div class="statusbar__column">
         <span class="statusbar__clock">
@@ -43,33 +44,45 @@
         </div>
     </header>
 </div>
-    <main class="chats">
-      <div class="chats__messages">
+
+<main class="chat-screen">
+    <ul class="chat__messages">
         <span class="chat__timestamp">Monday May 6, 2019</span>
-      </div>
-      <ul>
-        <!-- inbound message -->
         <li class="incoming-msg msg">
-          <img src="images/avatar3.png" class="m-avatar msg-avatar" />
-          <div class="msg__content">
-            <span>Best friend</span>
-          </div>
-          <div class="msg__bubble">
-            <span>How are you?</span>
-          </div>
-          <div class="msg__timestamp">
-            <span>5:58</span>
-          </div>
-        </li>
-        <!-- outbound message -->
-        <li class="incoming-msg msg">
-          <div class="msg__bubble">
-            <div class="msg__timestamp">
-              5:59
+            <img src="images/avatar3.png" class="m-avatar msg__avatar" />
+            <div class="msg__content">
+                <span class="msg__author">Best Friend</span>
+              <span class="msg__bubble">
+               Hi, How are you?
+              </span>
+             
             </div>
-            <span>I'm fine, and you?</span>
-          </div>
-        </li>
+          </li>
+          <li class="sent-msg msg">
+            <div class="msg__content">
+              <span class="msg__bubble">
+                Good. and you?
+              </span>
+            </div>
+          </li>
+          <li class="incoming-msg msg">
+            <img src="images/avatar3.png" class="m-avatar msg__avatar" />
+            <div class="msg__content">
+                <span class="msg__author">Best Friend</span>  
+              <span class="msg__bubble">
+                  I'm fine too!
+              </span>
+              
+            </div>
+          </li>
+          <li class="sent-msg msg">
+            <div class="msg__content">
+              <span class="msg__bubble">
+              Okay, talk to you later.
+              </span>
+            </div>
+          </li>
+        </ul>
       </ul>
     </main>
 
@@ -81,8 +94,8 @@
         <input type="text" class="chat__input" />
       </div>
       <div class="chat__type-column">
-        <span><i class="fas fa-microphone"></i></span>
         <span><i class="far fa-smile-wink"></i></span>
+        <span><i class="fas fa-microphone"></i></span>
       </div>
     </div>
   </body>

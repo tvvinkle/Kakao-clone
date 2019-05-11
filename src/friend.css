@@ -18,6 +18,10 @@
   align-items: center;
 }
 
+li .friends__friend .friend {
+margin-bottom: 50px;
+}
+
 .friend .friend__avatar {
   width: 50px;
   border-radius: 40%;

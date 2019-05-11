@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 
+@import "chat.css";
 @import "reset.css";
 @import "statusbar.css";
 @import "header.css";
@@ -9,9 +10,8 @@
 @import "more.css";
 @import "setting.css";
 
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -24,5 +24,5 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
-
