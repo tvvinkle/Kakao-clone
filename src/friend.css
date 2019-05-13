@@ -1,3 +1,7 @@
+.friends {
+  margin-top: 120px;
+}
+
 .friends .friends__plus {
   padding: 20px 0px;
   border-top: 1px solid #f7f7f7;
@@ -18,8 +22,8 @@
   align-items: center;
 }
 
-li .friends__friend .friend {
-margin-bottom: 50px;
+.friends__friend {
+  margin-bottom: 5px;
 }
 
 .friend .friend__avatar {
@@ -74,7 +78,7 @@ margin-bottom: 50px;
 }
 
 .friend_music i {
-    font-size: 5px;
+  font-size: 5px;
 }
 
 .friend__add-btn {
