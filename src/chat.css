@@ -5,6 +5,7 @@
   padding: 10px 0px;
   background-color: white;
   z-index: 1;
+  margin: 0px 0px;
 }
 
 .chats,
@@ -18,13 +19,12 @@
 }
 
 .chats__chat {
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 }
 
 .chat-body {
-  background-image: url("../images/linen.png");
   width: 100%;
-  min-height: 130vh;
+  min-height: 115vh;
 }
 
 .chat__type-container {
@@ -42,6 +42,32 @@
   border-top: 1px solid #f7f7f7;
 }
 
+@keyframes inboundMsg{
+  from{
+    opacity: 0;
+transform:  translateX(-150px)
+  }
+  to{
+    opacity: 1;
+transform: none;
+  }
+
+}
+
+
+
+@keyframes outboundMsg{
+  from{
+    opacity: 0;
+    transform:  translateX(150px)
+  }
+  to{
+    opacity: 1;
+    transform: none;
+  }
+
+}
+
 .chat__type {
   margin: 0 auto;
   width: 100%;
@@ -50,14 +76,11 @@
   border-radius: 0px;
   padding: 15px 60px;
   font-size: 16px;
-  transition: width 0.5s ease-in-out, box-shadow 0.5s ease-in-out,
-    border-radius 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .chat__type:focus {
   outline: none;
 }
-
 
 .chat__icon-left {
   position: absolute;
@@ -70,7 +93,7 @@
 }
 
 .chat__write-icon {
-    margin: 5px;
+  margin: 5px;
 }
 .chat__type i {
   font-size: 0px;
@@ -107,6 +130,7 @@
   display: flex;
   align-items: center;
   width: auto;
+  align-content: flex-start;
 }
 
 .msg .msg__content {
@@ -116,10 +140,28 @@
 
 .incoming-msg {
   align-self: flex-start;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  animation: inboundMsg .3s linear forwards;
 }
 
 .sent-msg {
   align-self: flex-end;
+  animation: outboundMsg .3s linear forwards;
+}
+
+.msg__avatar {
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes spin{
+  from{
+  transform: rotateY(1turn)
+  }
+  to{
+    transform: none;
+  }
 }
 
 .incoming-msg img {
@@ -129,7 +171,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
-  animation: spin 1s linear infinite;
+  animation: spin .5s linear .3s;
 }
 
 .msg .msg__bubble {
@@ -155,12 +197,11 @@
 
 .incoming-msg .msg__bubble {
   border-bottom-left-radius: 0px;
-  background-image: linear-gradient(to right,   #aed6f1
-  ,   #aed6f1
-  );
+  background-image: linear-gradient(to right, #aed6f1, #aed6f1);
 }
 
 .sent-msg .msg__bubble {
   border-bottom-right-radius: 0px;
-  background-image: linear-gradient(to left, #ffe812 , #ffe812 );
+  background-image: linear-gradient(to left, #ffe812, #ffe812);
 }
+
