@@ -1,0 +1,61 @@
+.login {
+    background-color: rgb(255, 232, 18);
+}
+
+.login__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    font-size: 16px;
+}
+
+.login .logo {
+    color: #452007;
+    font-size: 150px;
+    opacity: .9;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: .5px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+    background-color: #452007;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.remember {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+}
+
+input[type=checkbox] {
+    position: left;
+    left: 10px;
+    width: 10%;
+}
+
+form .submit {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10%;
+    opacity: .8;
+}

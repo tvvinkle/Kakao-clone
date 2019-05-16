@@ -2,6 +2,7 @@
     background-image: url("../images/profile_bg1.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-size: 100% 230%;
 }
 
 .profile .profile__header {
